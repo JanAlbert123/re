@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1f2937;
+  background: #f3f6fb;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 6%;
+  color: #fff;
+  background: #263b80;
+}
+
+header h1 {
+  margin: 0 0 14px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: min(1100px, 100%);
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid #e3e8f0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+#dashboard h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+#dashboard article {
+  padding: 14px;
+  border: 1px solid #edf0f5;
+  border-radius: 8px;
+}
+
+#dashboard h3 {
+  margin: 0;
+  color: #657187;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#dashboard article p {
+  margin: 8px 0 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#students h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+form label {
+  font-size: 13px;
+}
+
+input,
+select,
+button {
+  min-height: 38px;
+  padding: 8px 11px;
+  border: 1px solid #d8deea;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+}
+
+button {
+  border-color: #405fd0;
+  color: #fff;
+  background: #405fd0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #304db7;
+}
+
+#students > button {
+  margin: 0 6px 14px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+caption {
+  padding: 8px;
+  text-align: left;
+  font-weight: 700;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+th {
+  color: #657187;
+  font-size: 12px;
+}
+
+td button {
+  margin: 2px;
+}
+
+footer {
+  padding: 18px 6%;
+  color: #657187;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  #dashboard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  form label,
+  form input,
+  form select,
+  form button {
+    width: 100%;
+  }
+
+  table {
+    min-width: 700px;
+  }
+
+  #students {
+    overflow-x: auto;
+  }
+}
