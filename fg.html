@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+</head>
+<body>
+  <header>
+    <h1>Student Management System</h1>
+    <nav aria-label="Main navigation">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#students">Students</a>
+      <a href="#courses">Courses</a>
+      <a href="#attendance">Attendance</a>
+      <a href="#reports">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard" aria-labelledby="dashboard-heading">
+      <h2 id="dashboard-heading">Dashboard</h2>
+      <article>
+        <h3>Total students</h3>
+        <p>0</p>
+      </article>
+      <article>
+        <h3>Active students</h3>
+        <p>0</p>
+      </article>
+      <article>
+        <h3>Departments</h3>
+        <p>0</p>
+      </article>
+      <article>
+        <h3>Graduated</h3>
+        <p>0</p>
+      </article>
+    </section>
+
+    <section id="students" aria-labelledby="students-heading">
+      <h2 id="students-heading">Student Directory</h2>
+      <form action="#" method="get">
+        <label for="student-search">Search students</label>
+        <input id="student-search" name="search" type="search" placeholder="Search by name, ID, or email">
+
+        <label for="department-filter">Department</label>
+        <select id="department-filter" name="department">
+          <option value="">All departments</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="business">Business</option>
+          <option value="engineering">Engineering</option>
+          <option value="arts-and-design">Arts &amp; Design</option>
+        </select>
+
+        <label for="status-filter">Status</label>
+        <select id="status-filter" name="status">
+          <option value="">All statuses</option>
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+          <option value="graduated">Graduated</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+
+      <button type="button">Add student</button>
+      <button type="button">Export CSV</button>
+
+      <table>
+        <caption>Student records</caption>
+        <thead>
+          <tr>
+            <th scope="col">Student ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Department</th>
+            <th scope="col">Year</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>STU-001</td>
+            <td>Olivia Chen</td>
+            <td>olivia@example.edu</td>
+            <td>Computer Science</td>
+            <td>3rd Year</td>
+            <td>Active</td>
+            <td>
+              <button type="button">Edit</button>
+              <button type="button">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>STU-002</td>
+            <td>Noah Williams</td>
+            <td>noah@example.edu</td>
+            <td>Business</td>
+            <td>2nd Year</td>
+            <td>Active</td>
+            <td>
+              <button type="button">Edit</button>
+              <button type="button">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>STU-003</td>
+            <td>Amara Okafor</td>
+            <td>amara@example.edu</td>
+            <td>Engineering</td>
+            <td>4th Year</td>
+            <td>Inactive</td>
+            <td>
+              <button type="button">Edit</button>
+              <button type="button">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="courses" aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Courses</h2>
+    </section>
+
+    <section id="attendance" aria-labelledby="attendance-heading">
+      <h2 id="attendance-heading">Attendance</h2>
+    </section>
+
+    <section id="reports" aria-labelledby="reports-heading">
+      <h2 id="reports-heading">Reports</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>Academic year: 2025–2026</p>
+  </footer>
+</body>
+</html>
